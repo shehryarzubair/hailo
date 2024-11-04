@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:ital,wght@0,400..700;1,400..700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 1rem;
+  font-family: "Afacad", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  line-height: normal;
+  // background-color: $body-color;
+  overflow: hidden;
+}
+
+.customCalender {
+  * {
+    font-family: "Afacad", sans-serif !important;
+  }
+  .p-datepicker {
+    width: 75vw !important;
+    .p-datepicker-header {
+      .p-datepicker-title {
+        padding-left: 0.3rem;
+        color: $black-color;
+        font-weight: 700;
+        .p-datepicker-year {
+          margin-left: 0.3rem;
+        }
+      }
+      .p-datepicker-prev {
+        order: 2;
+        margin-left: auto;
+        svg {
+          color: $black-color;
+        }
+      }
+      .p-datepicker-next {
+        order: 3;
+        svg {
+          color: $black-color;
+        }
+      }
+    }
+    .p-datepicker-calendar {
+      margin-top: 1rem;
+      tr {
+        &[data-pc-section="tableheaderrow"] {
+          border-bottom: 1px solid #e5e5e5;
+        }
+        th {
+          padding: 0.5rem;
+          span {
+            color: #1e293b;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin: auto;
+          }
+        }
+        td {
+          padding: 0.5rem;
+
+          &.p-datepicker-today {
+            span {
+              background-color: transparent;
+            }
+          }
+          span {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #1e293b;
+            font-size: 0.75rem;
+            font-weight: 700;
+            margin: auto;
+            &.p-highlight {
+              color: $white-color;
+              background-color: $blue-color;
+            }
+          }
+        }
+        th:first-child {
+          padding-left: 0;
+        }
+        td:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+}
+
+.customRadioButton {
+  .p-radiobutton {
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    .p-radiobutton-input {
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.gradient {
+  background: rgb(106, 152, 193);
+  background: linear-gradient(
+    90deg,
+    rgba(106, 152, 193, 1) 0%,
+    rgba(199, 153, 163, 1) 50%,
+    rgba(237, 228, 158, 1) 100%
+  );
+}
