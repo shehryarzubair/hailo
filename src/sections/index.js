@@ -1,6 +1,6 @@
 import Header from "./header/Header";
 import ChatNow from "./chatNow/ChatNow";
-import CardSlider from "./cardslider/Cardslider";
+import CardSlider from "./cardslider/CardSlider";
 import RecentConversaton from "./recentConversaton/RecentConversaton";
 import Footer from "./footer/Footer";
 import TalkToAI from "./talkToAI/TalkToAI";
